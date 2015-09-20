@@ -1207,17 +1207,38 @@ hr {
   position: fixed;
 }
 * {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Playfair Display', Serif;
   font-weight: normal;
 }
-header {
-  background-color: #313840;
-  color: #fff;
+a {
+  text-decoration: none !important;
 }
-header .container span {
-  font-size: 20px;
-  text-align: center;
+header {
+  background-color: grey;
+  padding-top: 20px;
+}
+header .container .logo {
+  font-size: 28px;
   display: block;
+  color: #fff;
+  float: left;
+}
+header .container nav {
+  float: left;
+}
+header .container nav ul {
+  list-style: none;
+}
+header .container nav ul li {
+  display: inline-block;
+}
+header .container nav ul li a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 500;
 }
 .mainpage .row div {
   float: left;

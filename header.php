@@ -2,11 +2,16 @@
 
 <head>
 <?php wp_head(); ?>
+
+<meta name="viewport" content="width=320, initial-scale=1.0, maximum-scale=1.0">
+
 <link href="<?php echo get_stylesheet_uri(); ?>" type="text/css" rel="stylesheet" />
 
 <!-- google fontz -->
 <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
 
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -23,6 +28,15 @@
 
   <header>
     <div class="container">
-      <span>Steve Quatrale</span>
+      <a class="logo" href="#">Steve Q</a>
+      <nav>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Home</a></li>
+          <li><a href="">Home</a></li>
+          <li><a href="">Home</a></li>
+          <li><a href="">Home</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
