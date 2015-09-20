@@ -1276,8 +1276,7 @@ header .container .burger:hover .burger-patty.middle {
   background-color: #fff;
 }
 .mainpage {
-  z-index: 10;
-  background-image: url('../imgs/slider2.jpg');
+  background-image: url('../imgs/slider3.jpg');
   background-size: cover;
 }
 .mainpage .overlay {
@@ -1307,4 +1306,10 @@ header .container .burger:hover .burger-patty.middle {
 .mainpage .overlay .container .row .subheader-holder p {
   font-size: 15px;
   color: rgba(255, 255, 255, 0.5);
+}
+.mainpage .mouse-scroll {
+  position: relative;
+  bottom: 100px;
+  margin: 0 auto;
+  display: block;
 }
