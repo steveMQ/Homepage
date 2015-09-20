@@ -28,15 +28,26 @@
 
   <header>
     <div class="container">
-      <a class="logo" href="#">Steve Q</a>
-      <nav>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">Home</a></li>
-          <li><a href="">Home</a></li>
-          <li><a href="">Home</a></li>
-          <li><a href="">Home</a></li>
-        </ul>
-      </nav>
+      <div class="row">
+
+        <a class="logo" href="#">Steve Q</a>
+        
+        <button class="burger">
+          <div class="burger-patty"></div>
+          <div class="burger-patty"></div>
+          <div class="burger-patty"></div>
+        </button>
+
+        <nav>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Home</a></li>
+            <li><a href="">Home</a></li>
+            <li><a href="">Home</a></li>
+            <li><a href="">Home</a></li>
+          </ul>
+        </nav>
+
+      </div>
     </div>
   </header>

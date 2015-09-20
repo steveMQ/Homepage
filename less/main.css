@@ -1214,8 +1214,10 @@ a {
   text-decoration: none !important;
 }
 header {
-  background-color: grey;
+  background-color: rgba(0, 0, 0, 0.2);
   padding-top: 20px;
+  position: fixed;
+  width: 100%;
 }
 header .container .logo {
   font-size: 28px;
@@ -1224,7 +1226,9 @@ header .container .logo {
   float: left;
 }
 header .container nav {
-  float: left;
+  float: right;
+  padding-top: 10px;
+  margin-right: 100px;
 }
 header .container nav ul {
   list-style: none;
@@ -1239,8 +1243,32 @@ header .container nav ul li a {
   color: #fff;
   letter-spacing: 2px;
   font-weight: 500;
+  padding: 0 15px;
 }
-.mainpage .row div {
+header .container .burger {
+  float: right;
+  border: none;
+  outline: none;
+  padding: 5px;
+  background-color: transparent;
+}
+header .container .burger .burger-patty {
+  display: block;
+  height: 3px;
+  width: 22px;
+  background-color: #fff;
+  content: ' ';
+  margin-top: 4px;
+}
+.mainpage {
+  padding-top: 60px;
+  z-index: 10;
+}
+.mainpage .container {
+  height: 1000px;
+  background-color: gray;
+}
+.mainpage .container .row div {
   float: left;
   width: 100%;
   position: relative;
@@ -1250,7 +1278,7 @@ header .container nav ul li a {
   text-align: center;
 }
 @media (min-width: 768px) {
-  .mainpage .row div {
+  .mainpage .container .row div {
     float: left;
     width: 33.33333333%;
   }
