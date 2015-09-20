@@ -1222,7 +1222,7 @@ header {
 header .container .logo {
   font-size: 28px;
   display: block;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.4);
   float: left;
 }
 header .container .logo span {
@@ -1243,7 +1243,7 @@ header .container nav ul li {
 header .container nav ul li a {
   font-size: 13px;
   text-transform: uppercase;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.4);
   letter-spacing: 2px;
   font-weight: 500;
   padding: 0 15px;
@@ -1251,6 +1251,7 @@ header .container nav ul li a {
 }
 header .container nav ul li a:hover {
   border-bottom: 3px solid #b41932;
+  color: #ffffff;
 }
 header .container .burger {
   float: right;
@@ -1258,12 +1259,13 @@ header .container .burger {
   outline: none;
   padding: 5px;
   background-color: transparent;
+  margin-top: 3px;
 }
 header .container .burger .burger-patty {
   display: block;
   height: 3px;
   width: 22px;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.4);
   content: ' ';
   margin: 4px 0;
 }
@@ -1304,5 +1306,5 @@ header .container .burger:hover .burger-patty.middle {
 }
 .mainpage .overlay .container .row .subheader-holder p {
   font-size: 15px;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.5);
 }
