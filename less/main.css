@@ -1207,7 +1207,7 @@ hr {
   position: fixed;
 }
 * {
-  font-family: 'Playfair Display', Serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: normal;
 }
 a {
@@ -1225,6 +1225,10 @@ header .container .logo {
   color: #fff;
   float: left;
 }
+header .container .logo span {
+  color: #b41932;
+  font-family: 'Playfair Display';
+}
 header .container nav {
   float: right;
   padding-top: 10px;
@@ -1237,17 +1241,16 @@ header .container nav ul li {
   display: inline-block;
 }
 header .container nav ul li a {
-  font-family: 'Roboto', sans-serif;
   font-size: 13px;
   text-transform: uppercase;
   color: #fff;
   letter-spacing: 2px;
   font-weight: 500;
   padding: 0 15px;
-  padding-bottom: 20px;
+  padding-bottom: 19px;
 }
 header .container nav ul li a:hover {
-  border-bottom: 2px solid #fff;
+  border-bottom: 3px solid #b41932;
 }
 header .container .burger {
   float: right;
@@ -1264,26 +1267,42 @@ header .container .burger .burger-patty {
   content: ' ';
   margin: 4px 0;
 }
+header .container .burger:hover .burger-patty {
+  background-color: #b41932;
+}
+header .container .burger:hover .burger-patty.middle {
+  background-color: #fff;
+}
 .mainpage {
   z-index: 10;
   background-image: url('../imgs/slider2.jpg');
   background-size: cover;
 }
-.mainpage .container {
-  height: 1000px;
+.mainpage .overlay {
+  background-color: rgba(0, 0, 0, 0.4);
 }
-.mainpage .container .row div {
-  float: left;
-  width: 100%;
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
+.mainpage .overlay .container {
+  padding-top: 300px;
+  min-height: 1000px;
+}
+.mainpage .overlay .container .row .subheader-holder {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  padding: 10px;
+  border-radius: 4px;
+}
+.mainpage .overlay .container .row .subheader-holder h1,
+.mainpage .overlay .container .row .subheader-holder p {
   text-align: center;
+  font-weight: normal;
 }
-@media (min-width: 768px) {
-  .mainpage .container .row div {
-    float: left;
-    width: 33.33333333%;
-  }
+.mainpage .overlay .container .row .subheader-holder h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #b41932;
+}
+.mainpage .overlay .container .row .subheader-holder p {
+  font-size: 15px;
+  color: #fff;
 }

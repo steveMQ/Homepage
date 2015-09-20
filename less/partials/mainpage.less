@@ -2,14 +2,34 @@
   z-index: 10;
   background-image: url('../imgs/slider2.jpg');
   background-size: cover;
-  .container {
-    height: 1000px;
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    .container {
+      padding-top: 300px;
+      min-height: 1000px;
       .row {
-        div {
-          .make-xs-column(12);
-          .make-sm-column(4);
-          text-align: center;
+        .subheader-holder {
+          display: block;
+          margin: 0 auto;
+          width: 300px;
+          padding: 10px;
+          border-radius: 4px;
+          h1, p {
+            text-align: center;
+            font-weight: normal;
+          }
+          h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+            color: #b41932;
+          }
+          p {
+            font-size: 15px;
+            color: #fff;
+          }
         }
       }
+    }
   }
+
 }

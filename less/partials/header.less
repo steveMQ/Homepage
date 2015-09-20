@@ -10,6 +10,10 @@ header {
       display: block;
       color: #fff;
       float: left;
+      span {
+        color: #b41932;
+        font-family: 'Playfair Display';
+      }
     }
     nav {
       float: right;
@@ -20,17 +24,17 @@ header {
         li {
           display: inline-block;
           a {
-            font-family: 'Roboto', sans-serif;
             font-size: 13px;
             text-transform: uppercase;
             color: #fff;
             letter-spacing: 2px;
             font-weight: 500;
             padding: 0 15px;
-            padding-bottom: 20px;
+            padding-bottom: 19px;
           }
           a:hover {
-            border-bottom: 2px solid #fff;
+            border-bottom: 3px solid #b41932;
+            // color: #b41932;
           }
         }
       }
@@ -48,6 +52,14 @@ header {
         background-color: #fff;
         content: ' ';
         margin: 4px 0;
+      }
+    }
+    .burger:hover {
+      .burger-patty {
+        background-color: #b41932;
+      }
+      .burger-patty.middle {
+        background-color: #fff;
       }
     }
   }

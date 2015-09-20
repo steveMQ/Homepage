@@ -30,11 +30,11 @@
     <div class="container">
       <div class="row">
 
-        <a class="logo" href="#">Steve Q</a>
+        <a class="logo" href="#">steve<span>Q</span></a>
 
         <button class="burger">
           <div class="burger-patty"></div>
-          <div class="burger-patty"></div>
+          <div class="burger-patty middle"></div>
           <div class="burger-patty"></div>
         </button>
 
