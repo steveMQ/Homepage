@@ -9,5 +9,5 @@ gulp.task('less', function(){
 });
 
 gulp.task('default', ['less'], function(){
-  gulp.watch('less/*.less', ['less']);
+  gulp.watch('less/partials/*.less', ['less']);
 });

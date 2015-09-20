@@ -1206,6 +1206,31 @@ hr {
 .affix {
   position: fixed;
 }
-body {
-  color: green;
+* {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+}
+header {
+  background-color: #313840;
+  color: #fff;
+}
+header .container span {
+  font-size: 20px;
+  text-align: center;
+  display: block;
+}
+.mainpage .row div {
+  float: left;
+  width: 100%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .mainpage .row div {
+    float: left;
+    width: 33.33333333%;
+  }
 }
