@@ -1215,7 +1215,7 @@ a {
 }
 header {
   background-color: rgba(0, 0, 0, 0.2);
-  padding-top: 20px;
+  padding: 10px 0;
   position: fixed;
   width: 100%;
 }
@@ -1244,6 +1244,10 @@ header .container nav ul li a {
   letter-spacing: 2px;
   font-weight: 500;
   padding: 0 15px;
+  padding-bottom: 20px;
+}
+header .container nav ul li a:hover {
+  border-bottom: 2px solid #fff;
 }
 header .container .burger {
   float: right;
@@ -1258,15 +1262,15 @@ header .container .burger .burger-patty {
   width: 22px;
   background-color: #fff;
   content: ' ';
-  margin-top: 4px;
+  margin: 4px 0;
 }
 .mainpage {
-  padding-top: 60px;
   z-index: 10;
+  background-image: url('../imgs/slider2.jpg');
+  background-size: cover;
 }
 .mainpage .container {
   height: 1000px;
-  background-color: gray;
 }
 .mainpage .container .row div {
   float: left;

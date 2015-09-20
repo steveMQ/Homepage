@@ -31,7 +31,7 @@
       <div class="row">
 
         <a class="logo" href="#">Steve Q</a>
-        
+
         <button class="burger">
           <div class="burger-patty"></div>
           <div class="burger-patty"></div>
@@ -41,8 +41,8 @@
         <nav>
           <ul>
             <li><a href="">Home</a></li>
-            <li><a href="">Home</a></li>
-            <li><a href="">Home</a></li>
+            <li><a href="">Work</a></li>
+            <li><a href="">Skills</a></li>
             <li><a href="">Home</a></li>
             <li><a href="">Home</a></li>
           </ul>
