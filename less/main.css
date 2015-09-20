@@ -1222,7 +1222,7 @@ header {
 header .container .logo {
   font-size: 28px;
   display: block;
-  color: rgba(255, 255, 255, 0.4);
+  color: #ffffff;
   float: left;
 }
 header .container .logo span {
