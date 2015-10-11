@@ -1320,6 +1320,9 @@ header .container .burger:hover .burger-patty.middle {
   padding-left: 0;
   padding-right: 0;
 }
+#portfolio .container .row {
+  margin-bottom: 20px;
+}
 #portfolio .container .row .portfolio-item {
   position: relative;
   min-height: 1px;
@@ -1336,4 +1339,5 @@ header .container .burger:hover .burger-patty.middle {
   text-align: center;
   background-color: #292c2f;
   color: rgba(255, 255, 255, 0.4);
+  min-height: 200px;
 }

@@ -1,7 +1,6 @@
 <?php get_header(); ?>
 
   <section id="mainpage">
-
       <div class="container">
         <div class="row">
           <div class="subheader-holder">
@@ -10,11 +9,9 @@
           </div>
         </div>
       </div>
-
   </section>
 
   <section id="portfolio">
-
     <div class="container">
       <div class="row">
         <div class="portfolio-item">
@@ -26,11 +23,19 @@
         <div class="portfolio-item">
           <div>Portfolio item 1</div>
         </div>
-
+      </div>
+      <div class="row">
+        <div class="portfolio-item">
+          <div>Portfolio item 1</div>
+        </div>
+        <div class="portfolio-item">
+          <div>Portfolio item 1</div>
+        </div>
+        <div class="portfolio-item">
+          <div>Portfolio item 1</div>
+        </div>
       </div>
     </div>
-
   </section>
-
 
 <?php get_footer(); ?>
