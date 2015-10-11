@@ -11,7 +11,7 @@
         </div>
       </div>
     </div>
-    
+
     <!--white mouse at the bottom of the subheader area -->
     <img src="<?php echo get_template_directory_uri(); ?>/imgs/mouse-scroll.png" class="mouse-scroll" />
 

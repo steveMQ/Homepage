@@ -1207,7 +1207,7 @@ hr {
   position: fixed;
 }
 * {
-  font-family: 'Roboto', sans-serif;
+  font-family: system, -apple-system, ".SFNSDisplay-Regular", "Helvetica Neue", "Roboto";
   font-weight: normal;
 }
 a {
@@ -1276,7 +1276,7 @@ header .container .burger:hover .burger-patty.middle {
   background-color: #fff;
 }
 .mainpage {
-  background-image: url('../imgs/slider3.jpg');
+  background-image: url('../imgs/slider2.jpg');
   background-size: cover;
 }
 .mainpage .overlay {
