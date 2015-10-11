@@ -1277,10 +1277,10 @@ header .container .burger:hover .burger-patty {
   background-color: #b41932;
 }
 header .container .burger:hover .burger-patty.middle {
-  background-color: #fff;
+  background-color: #b41932;
 }
 #mainpage {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 #mainpage .container {
   padding-top: 100px;
@@ -1294,7 +1294,6 @@ header .container .burger:hover .burger-patty.middle {
   display: block;
   margin: 0 auto;
   width: 300px;
-  border-radius: 4px;
   padding: 100px 0;
 }
 @media (min-width: 992px) {
@@ -1317,16 +1316,24 @@ header .container .burger:hover .burger-patty.middle {
   font-size: 15px;
   color: rgba(255, 255, 255, 0.4);
 }
-#portfolio .container .row div {
+#portfolio .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+#portfolio .container .row .portfolio-item {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  text-align: center;
 }
 @media (min-width: 992px) {
-  #portfolio .container .row div {
+  #portfolio .container .row .portfolio-item {
     float: left;
     width: 33.33333333%;
   }
+}
+#portfolio .container .row .portfolio-item div {
+  text-align: center;
+  background-color: #292c2f;
+  color: rgba(255, 255, 255, 0.4);
 }

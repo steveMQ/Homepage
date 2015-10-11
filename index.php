@@ -17,9 +17,16 @@
 
     <div class="container">
       <div class="row">
-        <div>Portfolio item 1</div>
-        <div>Portfolio item 2</div>
-        <div>Portfolio item 3</div>
+        <div class="portfolio-item">
+          <div>Portfolio item 1</div>
+        </div>
+        <div class="portfolio-item">
+          <div>Portfolio item 1</div>
+        </div>
+        <div class="portfolio-item">
+          <div>Portfolio item 1</div>
+        </div>
+
       </div>
     </div>
 
