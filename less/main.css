@@ -1213,11 +1213,15 @@ hr {
 a {
   text-decoration: none !important;
 }
+body {
+  background-color: #1d1f21;
+}
 header {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: #292c2f;
   padding: 10px 0;
   position: fixed;
   width: 100%;
+  z-index: 1;
 }
 header .container .logo {
   font-size: 28px;
@@ -1275,41 +1279,54 @@ header .container .burger:hover .burger-patty {
 header .container .burger:hover .burger-patty.middle {
   background-color: #fff;
 }
-.mainpage {
-  background-image: url('../imgs/slider2.jpg');
-  background-size: cover;
+#mainpage {
+  margin-bottom: 20px;
 }
-.mainpage .overlay {
-  background-color: rgba(0, 0, 0, 0.4);
+#mainpage .container {
+  padding-top: 100px;
 }
-.mainpage .overlay .container {
-  padding-top: 300px;
-  min-height: 1000px;
-}
-.mainpage .overlay .container .row .subheader-holder {
+#mainpage .container .row .subheader-holder {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #292c2f;
   display: block;
   margin: 0 auto;
   width: 300px;
-  padding: 10px;
   border-radius: 4px;
+  padding: 100px 0;
 }
-.mainpage .overlay .container .row .subheader-holder h1,
-.mainpage .overlay .container .row .subheader-holder p {
+@media (min-width: 992px) {
+  #mainpage .container .row .subheader-holder {
+    float: left;
+    width: 100%;
+  }
+}
+#mainpage .container .row .subheader-holder h1,
+#mainpage .container .row .subheader-holder p {
   text-align: center;
   font-weight: normal;
 }
-.mainpage .overlay .container .row .subheader-holder h1 {
+#mainpage .container .row .subheader-holder h1 {
   font-size: 40px;
   margin-bottom: 10px;
   color: #b41932;
 }
-.mainpage .overlay .container .row .subheader-holder p {
+#mainpage .container .row .subheader-holder p {
   font-size: 15px;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.4);
 }
-.mainpage .mouse-scroll {
+#portfolio .container .row div {
   position: relative;
-  bottom: 100px;
-  margin: 0 auto;
-  display: block;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  #portfolio .container .row div {
+    float: left;
+    width: 33.33333333%;
+  }
 }
