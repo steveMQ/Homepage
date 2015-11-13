@@ -1207,7 +1207,7 @@ hr {
   position: fixed;
 }
 * {
-  font-family: system, -apple-system, ".SFNSDisplay-Regular", "Helvetica Neue", "Roboto";
+  font-family: "Helvetica Neue", "Roboto";
   font-weight: normal;
 }
 a {
@@ -1291,10 +1291,14 @@ header .container .burger:hover .burger-patty.middle {
   padding-left: 15px;
   padding-right: 15px;
   background-color: #292c2f;
+  background-image: url('../imgs/sqBanner.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 583px;
   display: block;
   margin: 0 auto;
   width: 300px;
-  padding: 100px 0;
+  padding: 170px 0;
 }
 @media (min-width: 992px) {
   #mainpage .container .row .subheader-holder {
