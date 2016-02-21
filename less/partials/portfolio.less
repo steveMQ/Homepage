@@ -4,16 +4,41 @@
     padding-left: 0;
     padding-right: 0;
     .row {
-      margin-bottom: 20px;
+      margin-bottom: 30px;
       .portfolio-item {
         .make-md-column(4);
-        div {
+        .portfolio-item-content {
+          border: 4px solid #292c2f;
           text-align: center;
-          background-color: #292c2f;
-          color: rgba(255, 255, 255, 0.4);
-          min-height: 200px;
-          
+          position: relative;
+          img {
+            width:100%;
+          }
+          .portfolio-overlay {
+            display: none;
+            z-index: 99;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            background-color: rgba(0,0,0,0.7);
+            h1 {
+
+              color: #b41932;
+              display: block;
+              margin-top: 80px;
+            }
+            span {
+              color: rgba(255, 255, 255, 0.4);
+            }
+          }
         }
+        .portfolio-item-content:hover {
+          .portfolio-overlay {
+            display: block;
+          }
+        }
+
       }
     }
   }

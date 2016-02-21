@@ -1280,10 +1280,10 @@ header .container .burger:hover .burger-patty.middle {
   background-color: #b41932;
 }
 #mainpage {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 #mainpage .container {
-  padding-top: 100px;
+  padding-top: 90px;
 }
 #mainpage .container .row .subheader-holder {
   position: relative;
@@ -1293,6 +1293,7 @@ header .container .burger:hover .burger-patty.middle {
   background-color: #292c2f;
   background-image: url('../imgs/sqBanner.png');
   background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
   min-height: 583px;
   display: block;
@@ -1325,7 +1326,7 @@ header .container .burger:hover .burger-patty.middle {
   padding-right: 0;
 }
 #portfolio .container .row {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 #portfolio .container .row .portfolio-item {
   position: relative;
@@ -1339,9 +1340,39 @@ header .container .burger:hover .burger-patty.middle {
     width: 33.33333333%;
   }
 }
-#portfolio .container .row .portfolio-item div {
+#portfolio .container .row .portfolio-item .portfolio-item-content {
+  border: 4px solid #292c2f;
   text-align: center;
-  background-color: #292c2f;
+  position: relative;
+}
+#portfolio .container .row .portfolio-item .portfolio-item-content img {
+  width: 100%;
+}
+#portfolio .container .row .portfolio-item .portfolio-item-content .portfolio-overlay {
+  display: none;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+#portfolio .container .row .portfolio-item .portfolio-item-content .portfolio-overlay h1 {
+  color: #b41932;
+  display: block;
+  margin-top: 80px;
+}
+#portfolio .container .row .portfolio-item .portfolio-item-content .portfolio-overlay span {
   color: rgba(255, 255, 255, 0.4);
-  min-height: 200px;
+}
+#portfolio .container .row .portfolio-item .portfolio-item-content:hover .portfolio-overlay {
+  display: block;
+}
+#contact .container {
+  background-color: #292c2f;
+}
+#contact .container .row span {
+  color: rgba(255, 255, 255, 0.4);
+  text-align: center;
+  display: block;
 }
