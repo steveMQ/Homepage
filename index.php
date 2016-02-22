@@ -1,4 +1,12 @@
-<?php get_header(); ?>
+<?php
+  get_header();
+  global $post;
+  $projects = get_posts(array(
+    'post_type' => 'projects'
+  ));
+?>
+
+
 
   <!-- top area -->
   <section id="mainpage">
@@ -15,22 +23,30 @@
   <!--portfolio section -->
   <section id="portfolio">
     <div class="container">
-      <?php for ($i = 0; $i < 2; $i++): ?>
-        <div class="row">
-          <?php for ($j = 0; $j < 3; $j++): ?>
-            <div class="portfolio-item">
-              <div class="portfolio-item-content">
-                <img src="<?php echo get_template_directory_uri(); ?>/imgs/narwhal.png" />
-                <div class="portfolio-overlay">
-                  <h1>Project Title</h1>
-                  <span>short description of project</span>
-                </div>
-              </div>
 
+      <div class="row">
+        <?php foreach($projects as $post):
+          setup_postdata($post);
+          $postImage = get_field('project_image');
+        ?>
+          <div class="portfolio-item">
+            <div class="portfolio-item-content">
+              <img src="<?php echo $postImage['sizes']['large']; ?>" />
+              <div class="portfolio-overlay">
+                <h1><?php the_title(); ?></h1>
+                <span><?php the_excerpt(); ?></span>
+              </div>
             </div>
-          <?php endfor; ?>
-        </div>
-      <?php endfor; ?>
+          </div>
+        <?php
+          endforeach;
+          //refresh the post data after overriding it
+          wp_reset_postdata();
+        ?>
+      </div>
+
+
+
     </div>
   </section>
 
